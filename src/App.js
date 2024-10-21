@@ -8,8 +8,8 @@ import WhyUs from './pages/WhyUs';
 import Coaches from './pages/Coaches';
 import Contact from './pages/Contact';
 import Services from './pages/details/services/Services';
-import Gallery from './pages/details/gallery/Gallery';
-import Reviews from './pages/details/reviews/Reviews';
+import Gallery from './pages/details/Gallery';
+import Reviews from './pages/details/Reviews';
 
 
 function App() {

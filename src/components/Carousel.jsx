@@ -6,13 +6,13 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 
 const CustomLeftArrow = ({ onClick }) => (
-  <button onClick={onClick} className="absolute left-0 text-[20px] sm:text-[24px] text-primary bg-white rounded-full shadow-sm p-2">
+  <button onClick={onClick} className="absolute left-0 text-[20px] sm:text-[24px] text-primary bg-white rounded-full shadow-sm hidden md:flex p-2">
     <IoIosArrowBack />
   </button>
 );
 
 const CustomRightArrow = ({ onClick }) => (
-  <button onClick={onClick} className="absolute right-0 text-[20px]  sm:text-[24px] text-primary bg-white shadow-sm rounded-full p-2">
+  <button onClick={onClick} className="absolute right-0 text-[20px]  sm:text-[24px] text-primary bg-white shadow-sm rounded-full hidden md:flex p-2">
     <IoIosArrowForward />
   </button>
 );
@@ -45,7 +45,7 @@ const Carousel = ({ children }) => {
         minimumTouchDrag={80}
         rewind={false}
         rewindWithAnimation={false}
-        slidesToSlide={2}
+        slidesToSlide={1}
         swipeable
         rtl={true}
         customLeftArrow={<CustomLeftArrow />}

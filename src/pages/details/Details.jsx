@@ -1,9 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Banner from "../../components/Banner"
-import DetailsTable from './DetailsTable';
 import NavLink from '../../components/navbar/NavLink';
-import Cards from '../../components/cards/Cards';
+import DetailsTable from '../../components/DetailsTable';
 
 const schedules = [
     { days: 'Mon - Fri', time: '8.00 am - 9.00 am' },
