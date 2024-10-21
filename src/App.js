@@ -6,9 +6,10 @@ import Home from './pages/Home';
 import About from './pages/About';
 import WhyUs from './pages/WhyUs';
 import Coaches from './pages/Coaches';
-import Reviews from './pages/Reviews';
 import Contact from './pages/Contact';
 import Services from './pages/details/services/Services';
+import Gallery from './pages/details/gallery/Gallery';
+import Reviews from './pages/details/reviews/Reviews';
 
 
 function App() {
@@ -52,11 +53,11 @@ function App() {
             },
             {
               path: "gallery",
-              element: <>gallery</>,
+              element: <Gallery/>,
             },
             {
               path: "reviews",
-              element: <>reviews</>,
+              element: <Reviews/>,
             }
           ]
         }

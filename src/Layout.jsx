@@ -5,7 +5,7 @@ import NavBar from "./components/navbar/NavBar"
 
 const Layout = () => {
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen flex flex-col justify-between'>
         <NavBar/>
         <Outlet/>
         <Footer/>

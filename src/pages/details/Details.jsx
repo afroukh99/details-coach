@@ -2,8 +2,8 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Banner from "../../components/Banner"
 import DetailsTable from './DetailsTable';
-import NavLinks from '../../components/navbar/NavLinks';
 import NavLink from '../../components/navbar/NavLink';
+import Cards from '../../components/cards/Cards';
 
 const schedules = [
     { days: 'Mon - Fri', time: '8.00 am - 9.00 am' },
@@ -61,16 +61,18 @@ const Details = () => {
                 </section>
             </div>
 
-            <div className='w-[80%] md:w-[70%] lg:w-[60%] p-1 min-h-max flex flex-col gap-16 sm:ml-auto sm:mr-36 mt-20'>
+            <div className='w-[80%] md:w-[70%] lg:w-[60%] xl:w-[820px] p-1 min-h-max flex flex-col gap-16 sm:ml-auto sm:mr-36 mt-20'>
                 <section className='text-txt-100 text-[1.6rem] flex items-center justify-around sm:justify-center md:justify-normal sm:gap-32  '>
                     {
                         links.map((link) => (
-                            <NavLink  key={link.label} path={link.path}>{link.label}</NavLink>
+                            <NavLink key={link.label} path={link.path}>{link.label}</NavLink>
                         ))
                     }
                 </section>
                 <Outlet />
             </div>
+
+          
 
         </div>
     )

@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        signika: ['Signika', 'sans-serif'], 
-        lato : ["Lato", "sans-serif"],
-        inter : ["Inter", "sans-serif"]
+        signika: ['Signika', 'sans-serif'],
+        lato: ["Lato", "sans-serif"],
+        inter: ["Inter", "sans-serif"]
       },
       colors: {
         primary: "#1e6bd3",
@@ -17,6 +17,7 @@ module.exports = {
           100: "#212121",
           200: "#1b2129",
           300: "#2d2d2d",
+          400: "#525a6d"
         },
         txt: {
           100: "#98a2b3",
@@ -27,6 +28,11 @@ module.exports = {
         link: "#6e6d6d",
         bgGray: "#f4f4f4",
         border: "#cfcfcf",
+      },
+      fontSize : {
+        medium: "clamp(1.3rem, 0.9363636363636363rem + 1.2121212121212124vw, 2.1rem)",
+        small: "clamp(1rem, 0.7272727272727273rem + 0.9090909090909092vw, 1.6rem)",
+        xsmall: "clamp(0.8rem, 0.43636363636363634rem + 1.2121212121212124vw, 1.6rem)"
       }
     },
   },
