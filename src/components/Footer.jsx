@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='h-[200px] sm:h-[300px] lg:h-[400px] xl:h-[450px] w-full  flex justify-center py-4 lg:pt-[70px] font-inter '>
+    <div className='h-[200px] sm:h-[300px] lg:h-[400px] xl:h-[450px] w-full  flex justify-center py-4 lg:pt-[70px] font-inter'>
       <div className="w-[80%] h-full flex flex-col items-center justify-between gap-12 py-4 ">
         <section className='w-full flex justify-between'> 
           <div className="flex flex-col gap-4 sm:gap-8 w-1/3">
             <img src="/images/Group.png" alt="" className='w-[90px] h-[13px] sm:w-[165px] sm:h-[20px]' />
             <p className='text-xsmall text-txt-200'>Your platform to connect with certified sport coaches and personal trainers for tailored workout plans in easy steps.
-              Join us for a better experience.</p>
+              Join us for a better experience.</p> 
           </div>
           <div className=" flex flex-col gap-2">
             <h1 className='text-medium text-dark-100 font-[600]'>Menu</h1>
