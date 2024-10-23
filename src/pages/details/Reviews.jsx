@@ -51,7 +51,7 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <div className='flex flex-col gap-8  w-full min-h-full font-inter'>
+    <div className='flex flex-col gap-14  w-full min-h-full font-inter'>
       <Feedback />
       <section className='flex flex-col gap-8'>
         {
