@@ -32,6 +32,7 @@ module.exports = {
         link: "#6e6d6d",
         bgGray: "#f4f4f4",
         bgGray2: "#F9FAFB",
+        bgGray3 : "#E6EAEEB2",
         border: "#cfcfcf",
       },
       fontSize : {

@@ -5,11 +5,14 @@ import { FaRegStar } from "react-icons/fa";
 
 
 const WriteReview = () => {
-  const [active, setActive] = useState(true);
+  const [starNum, setStarNum] = useState(0);
 
-  const handlClickStar = (e) => {
-    console.log(e.target)
+  const handlClickStar = (index) => {
+    setStarNum(index + 1)
+    console.log(index)
   }
+  console.log(starNum)
+
   return (
     <div className='flex flex-col gap-10 font-inter'>
       <h1 className='text-dark-50 text-medium-100 font-[600]'>Write a Review</h1>
@@ -18,11 +21,7 @@ const WriteReview = () => {
         <div className="flex items-center gap-1">
           {
             Array(5).fill().map((_, index) => (
-              active ? (
-                <FaStar key={index} className={`cursor-pointer text-yellow-500`} onClick={handlClickStar} />
-              ) : (
-                <FaRegStar key={index} className={`cursor-pointer `} onClick={handlClickStar} />
-              )
+                <img  className='size-[12px] cursor-pointer' key={index} src={`/images/${index < starNum ? 'star.png' : 'emptyStar.png' }`} alt="star" onClick={()=>handlClickStar(index)} />
             ))
           }
         </div>
